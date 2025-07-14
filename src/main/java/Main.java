@@ -8,18 +8,16 @@ public class Main {
         for (int i = 0; i < 3; i ++) {
             String carName;
             int carSpeed;
-            int minSpeed = 1;
-            int maxSpeed = 250;
+            final int minSpeed = 1;
+            final int maxSpeed = 250;
 
             while (true) {
                 System.out.println("— Введите название машины №" + (i + 1) + ":");
-              //  if (scanner.hasNextLine()) {
                     carName = scanner.nextLine();
                     if (carName.trim().isEmpty()) {
                         System.out.println("Неправильное название");
                     } else {
                         break;
-               //     }
                 }
             }
 
@@ -43,3 +41,4 @@ public class Main {
         System.out.println("Самая быстрая машина:" + leader);
     }
 }
+

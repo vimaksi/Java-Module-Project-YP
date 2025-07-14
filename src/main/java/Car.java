@@ -1,6 +1,6 @@
 public class Car {
-    String name; //название авто
-    int speed; //скорость
+    final String name; //название авто
+    final int speed; //скорость
 
     Car(String name, int speed){// конструктор
         this.name = name;
